@@ -1,0 +1,106 @@
+<?php
+    include '../includes/db_connection.php';
+    ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../homepage.css" type="text/css" rel="stylesheet">
+    <title>Crossfit shoes</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container1">
+            <div class="nav-container">
+                    <div clas="Home hover-menu"><a href=""></a> Home</div>
+                    <div clas="Aanbod hover-menu">Aanbod</div>
+                    <div clas="Contact hover-menu">Weightlift schoenen</div>
+                    <div clas="Contact hover-menu">Crosstraining schoenen</div>
+                    <div clas="Contact hover-menu">Over ons</div>
+                    <div clas="Contact hover-menu">Contact</div>
+                </div>
+    </div>
+    <div class="container2">
+            <div class="box1">
+            <div class="filter-price">
+                <div class="filter-price-info">
+                    <a href="../sort-by-price/sort-by-price.php">-Oplopend</a><br>
+                    <a href="../sort-by-price/sort-by-price.php">-Aflopend</a>
+                </div>
+
+            <div class="filter-brand">
+                <div class="filter-brand-info">
+                    <a href="../filter-by-brand/filter-by-brand-reebok.php">-Reebok</a><br>
+                    <a href="../filter-by-brand/filter-by-brand-nike.php">-Nike</a>
+                </div>
+            </div>
+            <div class="filter-user">
+                <div class="filter-user-info">
+                    <a href="../filter-by-user/filter-by-user-1.php">-Koen Holman</a><br>
+                    <a href="../filter-by-user/filter-by-user-2.php">-Laurie Peeten</a><br>
+                    <a href="../filter-by-user/filter-by-user-3.php">-Adrie van Haasteren</a>
+                </div>
+            </div>
+            </div>
+            <div class="box2">
+            <div class="box-cards">
+
+        <?php include "../includes/filter-by-brand-nike.php"; ?> <!-- sort-by-price.php of cards.php -->
+        </div>
+
+        <div class="box3"></div>
+    </div>
+
+    <footer>
+                <div class="container4 containers " id="container1">
+                <a name="container4"></a>
+            <div class="box1-footer ">
+                <div class="item1-footer "></div>
+                <div class="item2-footer ">
+                    <div class="contact-footer ">
+                        <div class="contact-footer2">Contact</div></div>
+                    <div class="form-footer ">
+                        <div class="background-container">
+                            <div class="shadow">
+
+                            </div>
+
+                            <div class="form">
+                                <h2>Have a question or want to work together?</h2>
+
+
+                                <label for="name"></label>
+                                <input class="info" type="text" style="height:38" style="width:500"name="fullname" placeholder="Your name"> <br />
+
+                                <label for="Email"></label>
+                                <input class="info" type="text" style="height:38" style="width:500"name="email" placeholder="Your e-mail"> <br />
+
+                                <label for=""></label>
+
+
+                                <label for="subject"></label>
+                                <textarea class="fill" name="subject" placeholder="Write something"></textarea>
+                                <br />
+                                <button id="send">Send</button>
+                                </option>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="button-footer "></div>
+                </div>
+                <div class="item3-footer ">
+
+                </div>
+            </div>
+            <div class="box2-footer"></div>
+        </div>
+
+    </footer>
+</body>
+</html>
